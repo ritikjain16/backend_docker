@@ -1,0 +1,26 @@
+Launch ec2 instance, add ports to security inbound rules
+connect via ssh
+
+Run-------------------------
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo systemctl start docker
+sudo docker run hello-world
+docker ps
+sudo chmod 666 /var/run/docker.sock
+sudo systemctl enable docker
+docker --version
+
+Github Repo->Settings->Actions->Runners->New self-hosted runner
+Choose OS (linux)
+then run all github actions runners command in aws ec2-------------
+
+then run in aws ec2------------------
+sudo ./svc.sh install
+sudo ./svc.sh start
+
+Add your secret variables in 
+github repo->settings->secrets and variables->actions->new repository secret
+
+
+Then create docker file amd cicd.yml file
