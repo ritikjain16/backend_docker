@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.status(200).send({ msg: "Hello From Devops Backend." });
 });
 
-app.get("/data", (req, res) => {
+app.get("/data1", (req, res) => {
   res.status(200).send({ msg: "I am RJ16" });
 });
 
